@@ -39,15 +39,14 @@ fetch(API_URL)
 // 2. Uncomment the code below
 // 3. Update the data property to match your API (e.g., data.fact, data.message, etc.)
 
-/*
 const output = document.getElementById("output");
 
 fetch(API_URL)
     .then(response => response.json())
     .then(data => {
-        output.innerText = data.fact; // TODO: Change 'fact' to match your API's data structure
+        output.innerText = data.data; 
     });
-*/
+
 
 // ========================================
 // STEP 6: Add a Button to Fetch New Data
@@ -56,17 +55,15 @@ fetch(API_URL)
 // 1. Go to index.html and add: <button id="fetch-btn">Get New Data</button>
 // 2. Uncomment the code below
 
-/*
 const button = document.getElementById("fetch-btn");
 
 button.addEventListener("click", function() {
     fetch(API_URL)
         .then(response => response.json())
         .then(data => {
-            output.innerText = data.fact; // TODO: Change 'fact' to match your API's data structure
+            output.innerText = data.data; 
         });
 });
-*/
 
 // ========================================
 // STEP 7: BONUS - Add Image Support (if your API includes images)
